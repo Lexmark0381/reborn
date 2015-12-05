@@ -78,7 +78,7 @@ brew install Caskroom/cask/python
 brew install Caskroom/cask/python3
 brew install Caskroom/cask/mactex
 # #installing mongohub
-# wget https://cloud.github.com/downloads/bububa/MongoHub-Mac/MongoHub.zip && unzip MongoHub.zip && mv MongoHub.app/ Applications/ && echo "MongoHub installed!" && rm MongoHub*
+wget https://cloud.github.com/downloads/bububa/MongoHub-Mac/MongoHub.zip && unzip MongoHub.zip && mv MongoHub.app/ Applications/ && echo "MongoHub installed!" && rm MongoHub*
 
 
 # #install NODE, BOWER, Polyserve
