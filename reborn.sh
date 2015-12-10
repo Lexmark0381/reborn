@@ -87,14 +87,14 @@ brew install Caskroom/cask/python
 brew install Caskroom/cask/python3
 brew install Caskroom/cask/mactex
 # #installing mongohub
-wget https://cloud.github.com/downloads/bububa/MongoHub-Mac/MongoHub.zip && unzip MongoHub.zip && mv MongoHub.app/ Applications/ && echo "MongoHub installed!" && rm MongoHub*
+# wget https://cloud.github.com/downloads/bububa/MongoHub-Mac/MongoHub.zip && unzip MongoHub.zip && mv MongoHub.app/ Applications/ && echo "MongoHub installed!" && rm MongoHub*
 
 
 # #install NODE, BOWER, Polyserve
-wget https://nodejs.org/dist/v4.2.1/node-v4.2.1.pkg && sudo installer -pkg node-v4.2.1.pkg -target / && rm node-v4.2.1.pkg
-sudo npm install -g nodemon
-sudo npm install -g bower
-sudo npm install -g polyserve
+# wget https://nodejs.org/dist/v4.2.1/node-v4.2.1.pkg && sudo installer -pkg node-v4.2.1.pkg -target / && rm node-v4.2.1.pkg
+# sudo npm install -g nodemon
+# sudo npm install -g bower
+# sudo npm install -g polyserve
 
 
 #installing Robomongo
@@ -106,8 +106,8 @@ sudo npm install -g polyserve
 # #Installing Latex
 # wget http://tug.org/cgi-bin/mactex-download/MacTeX.pkg && sudo installer -pkg MacTeX* -target / && echo "MacTeX installed!!" && rm MacTeX.pkg
 
-cd Applications
+# cd Applications
 
 # #Run First config
-open Caffeine.app Dropbox.app FileZilla.app GIMP.app Macs\ Fan\ Control.app MongoHub.app/ Robomongo.app/ Sublime\ Text\ 2.app Transmission.app VLC.app unetbootin.app
-open /Applications/owncloud.app/ 
+# open Caffeine.app Dropbox.app FileZilla.app GIMP.app Macs\ Fan\ Control.app MongoHub.app/ Robomongo.app/ Sublime\ Text\ 2.app Transmission.app VLC.app unetbootin.app
+# open /Applications/owncloud.app/ 
