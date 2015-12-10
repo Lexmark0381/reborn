@@ -1,15 +1,23 @@
 #go home
 string=$( cat githubToken.txt )
 cd && clear
+#If githubToken.txt is not empty
+if [ "$string" != ""]; then
 #Check if .bash_profile exists
-if [ -e ~/.bash_profile ]; then
-	# your GitHub token is in .bash_profile yet?
-	result=$(grep -F "$string" ~/.bash_profile);
-	if [ "$result" != "$string" ]; then
-		# If not, puts your GitHub token in .bash_profile
-		echo "Updating .bash_profile.........";
-		echo $string >> .bash_profile;fi;
+	if [ -e ~/.bash_profile ]; then
+		# your GitHub token is in .bash_profile yet?
+		result=$(grep -F "$string" ~/.bash_profile);
+		if [ "$result" != "$string" ] ; then
+			# If not, puts your GitHub token in .bash_profile
+			echo "Updating .bash_profile.........";
+			echo $string >> .bash_profile;fi;
+	fi;
 fi;
+if [ "$string" = ""]; then
+	echo "GitHub token was not updated."
+fi;
+
+
 
 # .bash_profile doesn't exist...
 if [ ! -e .bash_profile ]; then 
@@ -50,6 +58,7 @@ brew update
 brew install Caskroom/cask/google-chrome
 brew install Caskroom/cask/sublime-text
 brew install Caskroom/cask/steam && open Applications/Steam.app
+brew install Caskroom/cask/github-desktop
 brew install Caskroom/cask/firefox
 brew install Caskroom/cask/filezilla
 brew install Caskroom/cask/brackets
