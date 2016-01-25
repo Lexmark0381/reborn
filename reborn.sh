@@ -1,4 +1,5 @@
 #go home
+echo "Checking GitHub Token..."
 string=$( cat githubToken.txt )
 cd && clear
 #If githubToken.txt is not empty
@@ -9,20 +10,21 @@ if [ "$string" != ""]; then
 		result=$(grep -F "$string" ~/.bash_profile);
 		if [ "$result" != "$string" ] ; then
 			# If not, puts your GitHub token in .bash_profile
-			echo "Updating .bash_profile.........";
+			echo "Updating ~/.bash_profile...";
 			echo $string >> .bash_profile;fi;
 	fi;
 fi;
 if [ "$string" = ""]; then
 	echo "GitHub token was not updated."
 fi;
+clear
 
 
 
 # .bash_profile doesn't exist...
 if [ ! -e .bash_profile ]; then 
 	# ... so create it and put inside your GitHub token.
-	echo $string > .bash_profile && echo ".bash_profile generated!"; fi;
+	echo $string > .bash_profile && echo "~/.bash_profile generated!"; fi;
 # Is XCode installed?
 if [ ! -d /Applications/Xcode.app ]; then
 	# No...
@@ -31,10 +33,12 @@ if [ ! -d /Applications/Xcode.app ]; then
 	exit 1;
 	kill $$
 	fi;
+clear
 # Yes, it is! 
 echo "XCode is installed. Continuing..."
 # Let's accept the license..
 sudo /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -license accept && echo "XCode License accepted!"
+clear
 # Check if the Developer Command Line Tools are installed...
 if [ ! -d /Library/Developer/CommandLineTools ]; then
 	# If they are not..
@@ -47,7 +51,8 @@ if [ ! -d /Library/Developer/CommandLineTools ]; then
 
 # Homebrew software...
 # Install HomeBrew!
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" && echo "BREW SUCCESFULLY INSTALLED!"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" && echo "HomeBrew has been installed!"
+clear
 
 # Update repositories...
 brew update
