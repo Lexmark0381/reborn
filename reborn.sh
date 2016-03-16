@@ -22,13 +22,13 @@ clear
 
 
 # .bash_profile doesn't exist...
-if [ ! -e .bash_profile ]; then 
+if [ ! -e ~/.bash_profile ]; then 
 	# ... so create it and put inside your GitHub token.
 	echo $string > .bash_profile && echo "~/.bash_profile generated!"; fi;
 # Is XCode installed?
 if [ ! -d /Applications/Xcode.app ]; then
 	# No...
-	echo "XCode is missing. Please install it before running this script." >&2;
+	echo "XCode is missing. Please install XCode before running this script." >&2;
 	open https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12;
 	exit 1;
 	kill $$
@@ -90,7 +90,7 @@ brew install Caskroom/cask/mongohub
 brew install Caskroom/cask/robomongo
 brew install Caskroom/cask/python
 brew install Caskroom/cask/python3
-brew install Caskroom/cask/mactex
+# brew install Caskroom/cask/mactex
 # #installing mongohub
 # wget https://cloud.github.com/downloads/bububa/MongoHub-Mac/MongoHub.zip && unzip MongoHub.zip && mv MongoHub.app/ Applications/ && echo "MongoHub installed!" && rm MongoHub*
 
@@ -108,7 +108,7 @@ brew install Caskroom/cask/mactex
 # #Installing Python-Idle
 # wget https://www.python.org/ftp/python/3.5.0/python-3.5.0-macosx10.6.pkg &&  sudo installer -pkg python-3.5.0-macosx10.6.pkg -target / && echo "IDLE - PYTHON installed!!" && rm rm python-3.5.0-macosx10.6.pkg
 
-# #Installing Latex
+# #Installing MacTex
 # wget http://tug.org/cgi-bin/mactex-download/MacTeX.pkg && sudo installer -pkg MacTeX* -target / && echo "MacTeX installed!!" && rm MacTeX.pkg
 
 # cd Applications
