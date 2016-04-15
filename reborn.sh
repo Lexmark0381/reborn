@@ -90,6 +90,8 @@ brew install Caskroom/cask/mongohub
 brew install Caskroom/cask/robomongo
 brew install Caskroom/cask/python
 brew install Caskroom/cask/python3
+brew install Caskroom/cask/onyx
+brew install Caskroom/cask/macdown
 # brew install Caskroom/cask/mactex
 # #installing mongohub
 # wget https://cloud.github.com/downloads/bububa/MongoHub-Mac/MongoHub.zip && unzip MongoHub.zip && mv MongoHub.app/ Applications/ && echo "MongoHub installed!" && rm MongoHub*
