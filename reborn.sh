@@ -77,6 +77,7 @@ brew install Caskroom/cask/transmission
 brew install Caskroom/cask/vlc
 brew install Caskroom/cask/unetbootin
 brew install Caskroom/cask/owncloud
+brew install android-platform-tools
 brew install Caskroom/cask/nomachine
 brew install watch
 brew install youtube-dl
